@@ -28,7 +28,7 @@ It's inspirated in [Extended Steamgifts](https://github.com/nandee95/Extended_St
 
 Some similar projects required several extra steps to work, external plugins/add-on or are outdated. For example, nowadays isn't necessary to call an `iframe` and mount the html from a xhr on it.
 
-I wanted an organized code and good performance. I checked some popular options but failed to comprehend its authoring workflow. So now decided to create a new snippet which is both flexible and straightforward.
+I wanted an organized code and good performance. I checked some popular options but failed to comprehend its authoring workflow. So now decided to create a new snippet which try to be both flexible and straightforward.
 
 
 ## Q & A
