@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Improved Steamgifts
 // @namespace    improvedSG
-// @version      1
+// @version      1.0.1
 // @run-at       document-start
 // @include		 *steamgifts.com*
 // @description  Improves steamgifts.com user experience
@@ -17,15 +17,14 @@
 (function() {
     'use strict';
     let currentPage = 1,
-        lastGiveawayRow,
-        queryParamType;
+        lastGiveawayRow;
     const btnEntryGiveaway = `<button class="entry-giveaway"><i class="fa fa-plus-circle" style="vertical-align: text-bottom;"></i> Enter Giveaway</button>&nbsp;`,
-          btnLoadMore = `<button class="load-more-giveaway"><i></i> Load more</button>`;
+          btnLoadMore = `<button class="load-more-giveaway"><i></i> Load more</button>`,
+          queryParamType = new URL(window.location.href).searchParams.get("type");
 
 
     document.addEventListener("DOMContentLoaded", function() {
         lastGiveawayRow = document.querySelector('div[style*="padding-top: 35px; padding-bottom: 10px; display: flex; justify-content: center;"]');
-        queryParamType = new URL(window.location.href).searchParams.get("type");
         document.querySelectorAll(".giveaway__row-inner-wrap.is-faded").forEach(e => e.parentNode.remove());
         const giveaways = [...document.querySelectorAll('.giveaway__row-outer-wrap')];
         lastGiveawayRow.insertAdjacentHTML('afterbegin', btnLoadMore);
