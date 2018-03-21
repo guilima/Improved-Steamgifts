@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         Improved Steamgifts - Styles
+// @run-at       document-start
 // @namespace    improvedSteamgifts_styles.js
 // @version      0.1
 // @description  Improves steamgifts.com user experience
