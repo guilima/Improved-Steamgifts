@@ -10,7 +10,7 @@ It's inspirated in [Extended Steamgifts](https://github.com/nandee95/Extended_St
     - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
     - [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=pt-BR)
 2. Access Tampermonkey Dashboard
-3. Access Utilities Tab
+3. Access **Utilities Tab**
 4. Import URL: `https://raw.githubusercontent.com/guilima/Improved-Steamgifts/master/improved-sg.js`
 
 
