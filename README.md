@@ -1,6 +1,6 @@
 # Improved-Steamgifts
 
-Improves steamgifts.com user experience making navigation more fluid and decreasing steps necessary to accomplish the participation in a giveaway.
+Improves [steamgifts.com](https://www.steamgifts.com/) user experience making navigation more fluid and decreasing steps necessary to accomplish the participation in a giveaway.
 
 It's inspirated in [Extended Steamgifts](https://github.com/nandee95/Extended_Steamgifts) and [Steamgifts Auto Entry Enhanced](https://greasyfork.org/en/scripts/29140-steamgifts-auto-entry-enhanced), but a much simpler, lightweight and faster alternative.
 
