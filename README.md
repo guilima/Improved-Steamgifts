@@ -17,11 +17,11 @@ It's inspirated in [Extended Steamgifts](https://github.com/nandee95/Extended_St
 ## Features
 
 - At list pages
-  - Entry button.
-  - Infinite scroller.
-  - Remove entered giveaways.
+  - Entry button
+  - Infinite scroller
+  - Remove entered giveaways
   - Hidden button giveaway without popout confirmation
-- Support fixed header.
+- Support fixed header
 
 
 ## Why?
@@ -42,8 +42,14 @@ I wanted an organized code and good performance. I checked some popular options 
 
 ## Todo
 
-- Code refactoring
+- Code refactoring by splitting in more files and using required decorator
 - Automated giveaways entry
   - Filtered by name (probably going to use _Steamgifts Auto Entry Enhanced_ structure)
   - Ignoring entered giveaways
   - Calculating points
+
+## Compatibility
+
+| [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/firefox.png" alt="Firefox" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/godban/browsers-support-badges/master/src/images/chrome.png" alt="Chrome" width="16px" height="16px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome
+| --------- | --------- |
+| last 2 versions| last 2 versions
