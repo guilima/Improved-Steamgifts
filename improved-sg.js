@@ -20,7 +20,7 @@
     lastGiveawayRow,
     loadMoreBtn;
   const entryGiveawayBtnString = `<button class="entry-giveaway"><i class="fa fa-plus-circle" style="vertical-align: text-bottom;"></i> Enter Giveaway</button>&nbsp;`,
-    loadMoreBtnString = `<button class="load-more-giveaway"><i></i> Load more</button>`,
+    loadMoreBtnString = `<div class="page__description__display-state text-center"><button class="load-more-giveaway"><i></i> Load more</button></div>`,
     queryParamType = new URL(window.location.href).searchParams.get('type');
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -29,7 +29,7 @@
     );
     document.querySelectorAll('.giveaway__row-inner-wrap.is-faded').forEach(e => e.parentNode.remove());
     const giveaways = [...document.querySelectorAll('.giveaway__row-outer-wrap')];
-    lastGiveawayRow.insertAdjacentHTML('afterbegin', loadMoreBtnString);
+    lastGiveawayRow.insertAdjacentHTML('beforebegin', loadMoreBtnString);
     loadMoreBtn = document.querySelector('.load-more-giveaway');
     giveaways.forEach(giveaway => {
       const giveawayGameHeading = giveaway.querySelector('.giveaway__heading');
