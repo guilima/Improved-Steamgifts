@@ -142,7 +142,7 @@
         crawlerData = crawlerData.substring(0, crawlerData.indexOf('<div class="pagination">')); //remove after
         crawlerData = crawlerData.replace(
           /<div> <div class="giveaway__row-outer-wrap"/,
-          `<div class="giveaway-page-${currentPage}"> <div class="giveaway__row-outer-wrap`
+          `<div class="giveaway-page-${currentPage}"> <div class="giveaway__row-outer-wrap"`
         ); // add id currentPage
         crawlerData = crawlerData.replace(
           /<h2 class="giveaway__heading"> <a class="giveaway__heading__name"/g,
