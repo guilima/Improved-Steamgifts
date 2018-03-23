@@ -27,6 +27,7 @@
     lastGiveawayRow = document.querySelector(
       'div[style*="padding-top: 35px; padding-bottom: 10px; display: flex; justify-content: center;"]'
     );
+    document.querySelector('.page__heading + div').classList.add(`giveaway-page-${currentPage}`);
     document.querySelectorAll('.giveaway__row-inner-wrap.is-faded').forEach(e => e.parentNode.remove());
     const giveaways = [...document.querySelectorAll('.giveaway__row-outer-wrap')];
     lastGiveawayRow.insertAdjacentHTML('beforebegin', loadMoreBtnString);
@@ -148,7 +149,9 @@
           `<h2 class="giveaway__heading">${entryGiveawayBtnString}<a class="giveaway__heading__name"`
         ); // add button
         crawlerData = crawlerData.replace(/data-popup="popup--hide-games"/g, ''); //remove popup
-        lastGiveawayRow.insertAdjacentHTML('beforebegin', crawlerData);
+        document
+          .querySelector(`.giveaway-page-${currentPage - 1}`)
+          .insertAdjacentHTML('afterend', crawlerData);
 
         loadMoreBtn.firstChild.classList.remove(...loadingClass);
         loadMoreBtn.removeAttribute('disabled');
