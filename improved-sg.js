@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Improved Steamgifts
 // @namespace     improvedSG
-// @version       1.0.2
+// @version       1.0.3
 // @run-at        document-start
 // @include       *steamgifts.com*
 // @description   Improves steamgifts.com user experience
