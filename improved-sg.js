@@ -125,6 +125,7 @@
   function loadMore() {
     const loadingClass = ['fa', 'fa-refresh', 'fa-spin', 'fa-2x', 'fa-fw'],
       type = queryParamType ? `&type=${queryParamType}` : '';
+    currentPage++;
     loadMoreBtn.setAttribute('disabled', '');
     loadMoreBtn.firstChild.classList.add(...loadingClass);
     fetch(`https://www.steamgifts.com/giveaways/search?page=${currentPage}${type}`, {
@@ -135,7 +136,6 @@
         return res.text();
       })
       .then(function(data) {
-        currentPage++;
         console.info(`Page ${currentPage} - loaded`);
         let crawlerData = data.replace(/\s+/g, ' '); //remove big whitespaces
         crawlerData = crawlerData.substring(crawlerData.indexOf('<div class="page__heading">')); //remove before
