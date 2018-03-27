@@ -23,7 +23,6 @@
 
       .featured__container { margin-top: 38px; }
 
-      .b-modal,
       .is-faded,
       .popup--hide-games { display: none!important;}
 
